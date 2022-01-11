@@ -1,7 +1,6 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
 tzdata
-setuptools
-setuptools_scm
-pytest
-freezegun
+pypi(setuptools_scm)
+pypi-pytest
+pypi(freezegun)

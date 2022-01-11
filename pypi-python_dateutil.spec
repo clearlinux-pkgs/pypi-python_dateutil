@@ -4,7 +4,7 @@
 #
 Name     : pypi-python_dateutil
 Version  : 2.8.2
-Release  : 78
+Release  : 79
 URL      : https://files.pythonhosted.org/packages/4c/c4/13b4776ea2d76c115c1d1b84579f3764ee6d57204f6be27119f13a61d0a9/python-dateutil-2.8.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/4c/c4/13b4776ea2d76c115c1d1b84579f3764ee6d57204f6be27119f13a61d0a9/python-dateutil-2.8.2.tar.gz
 Summary  : Extensions to the standard Python datetime module
@@ -14,17 +14,12 @@ Requires: pypi-python_dateutil-license = %{version}-%{release}
 Requires: pypi-python_dateutil-python = %{version}-%{release}
 Requires: pypi-python_dateutil-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: python-dateutil
-Provides: python-dateutil-python
-Provides: python-dateutil-python3
-BuildRequires : freezegun
+BuildRequires : pypi(freezegun)
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(setuptools_scm)
 BuildRequires : pypi(six)
 BuildRequires : pypi(wheel)
-BuildRequires : pytest
-BuildRequires : setuptools
-BuildRequires : setuptools_scm
+BuildRequires : pypi-pytest
 BuildRequires : tzdata
 
 %description
@@ -68,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641482838
+export SOURCE_DATE_EPOCH=1641944678
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
