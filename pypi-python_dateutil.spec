@@ -4,7 +4,7 @@
 #
 Name     : pypi-python_dateutil
 Version  : 2.8.2
-Release  : 87
+Release  : 88
 URL      : https://files.pythonhosted.org/packages/4c/c4/13b4776ea2d76c115c1d1b84579f3764ee6d57204f6be27119f13a61d0a9/python-dateutil-2.8.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/4c/c4/13b4776ea2d76c115c1d1b84579f3764ee6d57204f6be27119f13a61d0a9/python-dateutil-2.8.2.tar.gz
 Summary  : Extensions to the standard Python datetime module
