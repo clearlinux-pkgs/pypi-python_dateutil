@@ -6,10 +6,10 @@
 # autospec commit: e738c51
 #
 Name     : pypi-python_dateutil
-Version  : 2.9.0
-Release  : 94
-URL      : https://files.pythonhosted.org/packages/d9/77/bd458a2e387e98f71de86dcc2ca2cab64489736004c80bc12b70da8b5488/python-dateutil-2.9.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/d9/77/bd458a2e387e98f71de86dcc2ca2cab64489736004c80bc12b70da8b5488/python-dateutil-2.9.0.tar.gz
+Version  : 2.9.0.post0
+Release  : 95
+URL      : https://files.pythonhosted.org/packages/66/c0/0c8b6ad9f17a802ee498c46e004a0eb49bc148f2fd230864601a86dcf6db/python-dateutil-2.9.0.post0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/66/c0/0c8b6ad9f17a802ee498c46e004a0eb49bc148f2fd230864601a86dcf6db/python-dateutil-2.9.0.post0.tar.gz
 Summary  : Extensions to the standard Python datetime module
 Group    : Development/Tools
 License  : Apache-2.0 BSD-3-Clause
@@ -61,10 +61,10 @@ python3 components for the pypi-python_dateutil package.
 
 
 %prep
-%setup -q -n python-dateutil-2.9.0
-cd %{_builddir}/python-dateutil-2.9.0
+%setup -q -n python-dateutil-2.9.0.post0
+cd %{_builddir}/python-dateutil-2.9.0.post0
 pushd ..
-cp -a python-dateutil-2.9.0 buildavx2
+cp -a python-dateutil-2.9.0.post0 buildavx2
 popd
 
 %build
@@ -72,7 +72,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1709325565
+export SOURCE_DATE_EPOCH=1709417272
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
